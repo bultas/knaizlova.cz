@@ -1,0 +1,374 @@
+
+
+body {
+	font-size: 18px;
+	line-height: 1.85em;
+	font-family: 'Open Sans', sans-serif;
+    margin: auto;
+	}
+
+h1,h2,h3,h4,h5,h6 {	
+	line-height: 1em;
+}
+
+section {
+	/*margin-bottom: 2em;*/
+}
+
+/*.block {padding-bottom: 2em;} */
+
+img {width: 100%;}
+
+
+/*Snippets*/
+
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+
+.float-right {float: right}
+.float-left {float: left;}
+
+.mute {color: #999999;}
+
+
+.clearfix {clear: both;	}
+
+.hidden {display: none;}
+
+
+
+/*Main*/
+
+.container {
+	max-width: 900px;
+	margin: auto;
+	padding: 2em;
+}
+
+
+/* FORMS */
+
+
+/*give clicable elements pointer*/
+a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
+       cursor: pointer;
+}
+
+
+input, textarea, select {   
+    padding: 0.5em;  
+    border: solid 1px #F3F3F3; /* solid 1px #E5E5E5*/
+    width: 100%; 
+    outline: 0; /* nesviti okraje hover*/
+    color:#616161;
+    background: #FAFAFA; /*#F8F8F8*/
+    }  
+  
+textarea {   
+	width: 100%; 
+    line-height: 1.5em;
+    height: 100%;
+    word-wrap: break-word;
+    overflow: auto; /*odstrani ie posuvniky*/
+    /*resize: none; zabrani moznosti resize v rohu*/
+    } 
+
+
+input[type="checkbox"], input[type="radio"] {
+	width: 1em;
+	border: none;
+	margin-right: 0.4em;
+}
+ 
+
+input:hover, textarea:hover,  
+input:focus, textarea:focus {   
+    border-color: #C9C9C9;   
+    }  
+
+    .form-group:hover input {border-color: #C9C9C9; } /*pokud je mys nad celou skupinou, zvyrazni se input*/
+  
+
+.form {
+	margin-top: 2em;
+}
+
+.form-group {
+	padding-bottom: 1em;
+}
+
+	.form-group > div {
+		min-height: 2.3em;
+	}
+
+label {   
+    margin: 0 0.5em; 
+    opacity: 0.8;     
+    }  
+
+    .form-group:hover label {opacity: 1;}
+    .form-group:active label {opacity: 1;}
+
+/*.form input[type="text"], .form textarea, .form select {   
+    margin: 0.5em 0;      
+    } */
+
+.help-block {
+	font-size: 0.7em; 
+}
+
+
+
+/*Tables*/
+
+.table {
+    width: 100%;
+    margin-bottom: 2em;
+    line-height: 1.85em;
+}
+
+.table thead > tr > th {
+    vertical-align: bottom; /*zarovnani k dolni care*/
+    border-bottom: 2px solid #eee;
+}
+
+th {
+    text-align: left;
+    padding: 0.5em;
+}
+
+td {
+    padding: 0.5em;
+    vertical-align: top;
+    border-top: 1px solid #eee;
+}
+
+
+/*Typography*/
+
+.headline {
+	border-bottom: 1px solid #eee;
+	padding: 0em 0.2em 0.8em;
+}
+
+	.headline small {
+		font-weight: 300;
+		color: #999;}
+
+
+
+/*miscellaneous*/
+
+.upler {
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+
+/*Buttons*/
+  
+.button, .submit input, a.button {  
+    width: auto;
+    text-align: center;
+    padding: 0.5em 1.5em;   
+    border: 0;    
+    background-color: #79AF27;
+    color: #fff;
+    border-radius: 0.3em;
+    border: none;
+    text-decoration: none;
+    }  
+
+    .button:hover {
+    	background-color: #70A125;
+    	text-decoration: none;
+    }
+
+    .submit input {
+    	margin-top: 0.6em;
+    }
+
+
+
+
+
+
+/*Navigace*/
+
+ul.nav {
+	padding: 0;
+	margin: 0;
+}
+
+ul.nav li {
+	padding-left: 1.5em;
+	list-style-type: none;
+	float: right;}
+
+
+
+
+/*TABS*/
+
+/* TODO: U UL pouziti se nedeli taby primo na prostredek, je proto ůlepsi je vypsat jen jako A*/
+
+.tabs {
+    padding: 1em 0em 1em; }
+
+
+.tabs-group {
+    display: table;
+    width: 100%;
+    border-collapse: separate;
+    table-layout: fixed;
+    border-bottom: 4px solid #615445; /*Efekt linky pro taby, zatím nelze pužít EM kuli IE bagu*/
+}
+
+.tabs-group ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+.tab {
+    text-align: center;
+    padding: 1.3em 1em 1em 1em;
+    background-color: #887A6B;  
+    border-radius: 0.3em;
+}
+
+.tab.active, .tab:hover {
+    background-color: #615445;
+    }
+
+    .tab.active {font-weight: 700;}
+
+.tab.disabled {
+    background-color: #887A6B;
+    font-weight: normal;
+    cursor: default;
+    }
+
+    .tabs-group .tab {
+        display: table-cell;
+        float: none;
+        width: 1%;
+    }
+
+
+    a.tab, .tab a {
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    .tabs-group .tab:first-child:not(:last-child):not(.dropdown-toggle) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .tabs-group .tab:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+        border-radius: 0;
+        border-left: 1px solid #4B4B4B;
+        border-right: 1px solid #4B4B4B;
+    }
+
+    .tabs-group .tab:last-child:not(:first-child), .tabs-group > .dropdown-toggle:not(:first-child) {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+
+
+/*BIG */
+
+.big {
+    padding: 4em 0em;
+}
+
+    .big .big-headline, .big h1 {
+        font-weight: 900;
+        font-size: 4em;
+        margin: 0.5em 0;
+    }
+
+    .big .lead {
+        font-weight: 300;
+        font-size: 1.3em;
+    }
+
+    .big .action {
+        margin: 3em 0;
+    }
+
+    .big .action .button {
+        padding: 1em 2em;
+        text-transform: uppercase;
+        font-size: 0.9em;
+    }
+
+
+
+
+/*Features*/
+
+.feature {
+    padding: 4em 0em;
+}
+
+    .feature-headline {
+        font-weight: 900;
+        font-size: 1.6em;
+    }
+
+    .feature .feature-image {
+        padding: 1em;
+        max-width: 400px;
+    }
+
+
+
+
+/*Section divider*/
+
+.section-divider {
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #FAFAFA), color-stop(50%, #D9D9D9), color-stop(100%, #FAFAFA));
+    background-image: -webkit-linear-gradient(left, #FAFAFA, #D9D9D9, #FAFAFA);
+    background-image: -moz-linear-gradient(left, #fafafa, #d9d9d9, #fafafa);
+    background-image: -o-linear-gradient(left, #fafafa, #d9d9d9, #fafafa);
+    background-image: linear-gradient(left, #fafafa, #d9d9d9, #fafafa);
+    height: 1px;
+    width: 100%;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+/* Responsivity */
+
+
+@media all and (min-width: 320px) and (max-width: 1024px) {
+  body {
+  	font-size: 14px;
+  }
+  /*.container {max-width: 100%;}*/
+}
+
+@media all and (min-width: 1024px) and (max-width: 1600px) {
+  body {
+  	font-size: 16px;    
+  }
+  /*.container {
+    min-width: 900px;
+    max-width: 1100px;*/
+    }
+
+
+}

@@ -1,0 +1,296 @@
+
+.container {
+	max-width: 1000px;
+}
+
+p {
+	font-size: 1.1em;
+	font-weight: 300;
+	}
+
+a {
+	color: #771EA0;
+	text-decoration: none;
+	}
+
+a:hover {
+	color: #A720E5;
+	text-decoration: underline;
+	}
+
+
+img {
+	/*border-radius: 6px;*/
+}
+
+section {
+	padding: 1em 0em;
+}
+
+h1, h2, h3, h4, h5 {
+	line-height: 1.3em;
+}
+
+	h2 span {color: #771EA0;}
+
+	section h2 {
+		margin-bottom: 2em;
+	}
+
+
+section.top {
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	padding: 1.7em;
+	width: 100%;
+	background: #FFF;
+	z-index: 9000;
+	overflow: hidden;
+
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	transition: height 0.3s;
+
+	box-shadow: #AFAFAF 0px 1px 5px ;
+	-webkit-box-shadow: #AFAFAF 0px 1px 5px;
+	-moz-box-shadow:     #AFAFAF 0px 1px 5px;
+}
+
+	.logo img {
+		max-width: 120px;
+	}
+
+
+	.logo a {
+		font-size: 1.3em;
+		color: #000;
+	}
+
+	.logo a:hover {
+		text-decoration: none;
+	}
+
+	.logo span {
+		font-weight: 900;
+	}
+
+	.logo span span {
+		color: #771EA0;
+	}
+
+	.logo span:hover span {
+		color: #A720E5;
+	}
+
+	.logo small {font-weight: 500;}
+
+	/*Top navigation*/
+
+	ul.nav {
+		font-size: 0.9em;
+		font-weight: 300;}
+
+		ul.nav a {
+			/*color: #555;*/
+			text-decoration: none;}
+
+			ul.nav a:hover {
+				text-decoration: underline;
+			}
+
+
+
+
+section.header {
+	background-color: #D6771F;
+	background: url(../images/header.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: #fff;
+	padding: 5em 1em 1em;
+}
+
+	.big h1 {
+		color: #fff;
+	}
+	
+	.big span {
+		background: #99C21B;
+		padding: 0em 0.2em;
+		/*border-radius: 6px;*/
+	}
+
+	.big p span {
+		padding: 0.2em 0.5em;
+	}
+
+
+
+
+
+
+
+/*first section*/
+
+
+section.first {
+	background: #F5F5F5;
+	border-bottom: 1px solid #eee;
+
+
+}
+	
+	section.first h2 {
+		margin-bottom: 1em;
+	}
+
+	section.first img {
+		border: 1em solid #E9E9E9;
+	}
+
+	section.first .image {
+		margin: 1em 2em;
+	}
+
+	.lead {
+		font-weight: 300;
+		
+	}
+
+
+/*Gallery*/
+
+section.ordinace {
+	background: #F5F5F5;
+	border-top: 1px solid #eee;
+	padding-bottom: 3em;
+}
+
+ul.gallery { 
+	padding: 0;}
+
+.gallery .image { 
+	list-style: none; 
+	float: left;}
+
+.gallery img {
+	margin: 0 0.5em 0.5em;	
+	/*max-width:295px;*/
+	border: 1em solid #E9E9E9;
+}
+
+.gallery img:hover {
+	border: 1em solid #C9C9C9;
+}
+
+
+
+
+.thumbs { margin: 0; padding: 0; overflow: hidden; }
+
+
+.thumbs li a { }
+.thumbs li img { display: block; }
+.thumbs li a img { 
+	border: none; 
+	max-height: 150px;
+	width: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;}
+
+
+
+
+
+
+/*Nabídka služeb*/
+
+section.services {
+	padding-bottom: 3em;
+}
+
+.services-container {}
+
+	.services-container .list {
+		text-align: right; 
+		padding-right: 2em;
+
+	}
+
+		.services-container .list ul {
+			list-style: none;
+		}
+
+		.services-container .list ul a {
+			line-height: 2.5em;
+		}
+
+		.services-container .list ul li a.active {
+			font-weight: bold;
+		}
+
+
+	.services-container .content {
+		border-left: 1px solid #eee;
+		padding: 1em 2em 0em 2em;
+		min-height: 350px;
+	}
+
+
+
+
+/*Kontakt*/
+
+section.contact {
+	background: #7EB835;
+	color: #FFF;
+	padding-bottom: 3em;
+}
+
+	section.contact h2 span {
+		color: #000;
+
+	}
+
+	section.contact .adress-container {
+		width: 300px;
+		margin: auto;
+		padding: 3em 0;
+
+	}
+
+
+	section.contact td {
+		border: none;
+	}
+
+	section.contact td:first-child {
+		font-weight: bold;
+		font-size: 1.1em;
+	}
+
+
+
+/*Map*/
+
+#map-canvas {
+	height: 300px;
+	border: 1em solid #000;					        
+}
+
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+	section.top .navigation {
+		display: none;
+	}
+
+}
