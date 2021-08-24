@@ -3,14 +3,6 @@
 
 $(document).ready(function(){
 
-    // scroll
-
-    $('#top').localScroll({
-        duration:500,
-        offset: {top:-70}
-    });
-
-
     // services
 
 
